@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate News Articles with Aylien NLP</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="Title">
+                Evaluate News Articles with <a href="https://aylien.com/" target="_blank" rel="noopener">Aylien NLP</a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="text">
+                    
+                </div>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <label> Enter a news article URL:
+                        <input id="url" type="text" name="input" value="" placeholder="Note: please write the full URL">
+                    </label>
+                    <p id="error"></p>
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            <section>
+
+            <section>
+                <div id="results">
+                    <strong>Results:</strong>
+                    <p>URL: <span id="URLaddress"></span></p>
+                    <p>Polarity: <span id="polarity"></span></p>
+                    <p>Polarity Confidence: <span id="polarity-c"></span></p>
+                    <p>Subjectivity: <span id="subject"></span></p>
+                    <p>Subjectivity Confidence: <span id="subject-c"></span></p>
+                    <p>The article retrieved:<br> <span id="article"></span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made by <a href="https://najlaalbaz.com/" target="_blank" rel="noopener">Najla Albaz</a> for a project from the Udacity front end development nanodegree course</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+
+    </body>
+</html>

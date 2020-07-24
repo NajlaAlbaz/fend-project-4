@@ -1,0 +1,38 @@
+form {
+    color: #fff;
+    background-color: #009688;
+    border-radius: 16px;
+    padding: 40px;
+    font-size: 20px;
+
+    #error {
+        font-weight: bolder;
+        font-size: 12px;
+    }
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+    font-size: 16px;
+
+    &[value="submit"]{
+        width: 50%;
+
+    }
+}
+
+#results {
+    color: #009688;
+    font-size: 30px;
+    p {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bolder;
+        span {
+            font-weight: normal;
+        }
+    }
+}
